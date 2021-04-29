@@ -16,13 +16,19 @@
 
 <body>
   <!-- <iframe src="assets/audio/typewriter.mp3" type="audio/mp3" allow="autoplay" id="audio" style="display: none;"></iframe> -->
-  <audio controls autoplay="true">
-    <source src="assets/audio/typewriter.mp3" type="audio/mpeg">
-  </audio>
+  <audio id="myAudio" controls autoplay>
+  <source src="assets/audio/typewriter.mp3" type="audio/mpeg">
+</audio>
   <div id="console"></div>
 
   <script type="text/javascript" src="assets/js/console.js">
   </script>
+  <script>
+function myFunction() {
+  var x = document.getElementById("myAudio").autoplay;
+  document.getElementById("demo").innerHTML = x;
+}
+</script>
 </body>
 
 </html>
